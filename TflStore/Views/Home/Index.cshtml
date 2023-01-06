@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to TranFlower</h1>
+    <ol>
+        <li>FOOTBALL</li>
+        <li>HOCKEY</li>
+        <li>HAND BALL</li>
+        <li>CRICKET</li>
+    </ol>
+    @{
+        List<string> Sport=new List<string>();
+            Sport.Add("Nike");
+            Sport.Add("Adidas");
+            Sport.Add("Puma");
+            Sport.Add("Mrf");
+            <ol>
+                @foreach (string Sports in Sport)
+                {
+                    <li>@Sports</li>
+                }
+            </ol>
+            <p></p>
+             <hr/>
+    <img src="/image/crcket.jpg" width="100" height="100"/>  
+    <img src="/image/football.jpg" width="100" height="100"/>  
+    <img src="/image/handball.jpg" width="100" height="100"/>  
+<img src="/image/Hockey.jpg" width="100" height="100"/>  
+    }
+</div>
